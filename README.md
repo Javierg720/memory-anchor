@@ -1,8 +1,8 @@
-# Memory Anchor
+# Gemma Remember
 
 **An offline dementia care companion powered by Gemma 4.**
 
-Memory Anchor helps people with dementia remember their loved ones. Upload family photos, voice clips, and short stories. When they ask "Who is this?", the app gently reminds them — grounded entirely in the data you provide. No hallucinations. No cloud. No data leaves the device.
+Gemma Remember helps people with dementia remember their loved ones. Upload family photos, voice clips, and short stories. When they ask "Who is this?", the app gently reminds them — grounded entirely in the data you provide. No hallucinations. No cloud. No data leaves the device.
 
 ## How It Works
 
@@ -13,7 +13,7 @@ Memory Anchor helps people with dementia remember their loved ones. Upload famil
 ## Project Structure
 
 ```
-memory-anchor/
+gemma-remember/
 ├── scripts/
 │   ├── prepare_data.py      # Convert photos + captions + audio → training JSONL
 │   ├── train.py              # Fine-tune Gemma 4 E4B with Unsloth LoRA

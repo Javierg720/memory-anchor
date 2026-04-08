@@ -1,4 +1,4 @@
-# Memory Anchor — Training Configuration
+# Gemma Remember — Training Configuration
 # Tuned for consumer GPUs (8-16GB VRAM)
 
 model:
@@ -42,8 +42,8 @@ data:
   mock_dir: "mock_data"
 
 output:
-  model_dir: "models/memory-anchor-lora"
-  gguf_dir: "models/memory-anchor-gguf"
+  model_dir: "models/gemma-remember-lora"
+  gguf_dir: "models/gemma-remember-gguf"
 
 system_prompt: |
   You are a gentle memory companion. You help someone with dementia

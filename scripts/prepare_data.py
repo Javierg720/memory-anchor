@@ -1,5 +1,5 @@
 """
-Memory Anchor — Data Preparation
+Gemma Remember — Data Preparation
 
 Converts a folder of family photos, captions, and audio clips into
 Gemma 4 multimodal chat format (JSONL) for fine-tuning with Unsloth.
@@ -268,7 +268,7 @@ def prepare_dataset(raw_dir=None, mock=False, config_path="configs/training_conf
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Prepare Memory Anchor training data")
+    parser = argparse.ArgumentParser(description="Prepare Gemma Remember training data")
     parser.add_argument("--mock", action="store_true", help="Generate and use mock data")
     parser.add_argument("--raw-dir", type=str, help="Override raw data directory")
     parser.add_argument("--config", default="configs/training_config.yaml")

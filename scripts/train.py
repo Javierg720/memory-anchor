@@ -1,5 +1,5 @@
 """
-Memory Anchor — Fine-Tuning Script
+Gemma Remember — Fine-Tuning Script
 
 Fine-tunes Gemma 4 (E2B or E4B) with LoRA using Unsloth for
 1.5x speed and 50% less VRAM. Designed for consumer GPUs (8-16GB).
@@ -93,7 +93,7 @@ def convert_example(example, tokenizer):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Fine-tune Gemma 4 for Memory Anchor")
+    parser = argparse.ArgumentParser(description="Fine-tune Gemma 4 for Gemma Remember")
     parser.add_argument("--config", default="configs/training_config.yaml")
     parser.add_argument("--model", type=str, help="Override model name")
     parser.add_argument("--resume", type=str, help="Resume from checkpoint dir")

@@ -1,5 +1,5 @@
 """
-Memory Anchor — Export to GGUF
+Gemma Remember — Export to GGUF
 
 Exports the fine-tuned LoRA model to GGUF format for offline deployment:
   - llama.cpp (desktop)
@@ -55,14 +55,14 @@ def export(config, adapter_path=None, quantization="q4_k_m"):
 
     print(f"\nExported to {output_dir}/")
     print(f"\nTo run with Ollama:")
-    print(f"  ollama create memory-anchor -f {output_dir}/Modelfile")
-    print(f"  ollama run memory-anchor")
+    print(f"  ollama create gemma-remember -f {output_dir}/Modelfile")
+    print(f"  ollama run gemma-remember")
     print(f"\nTo run with llama.cpp:")
     print(f"  ./llama-server -m {output_dir}/*.gguf --port 8080")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Export Memory Anchor to GGUF")
+    parser = argparse.ArgumentParser(description="Export Gemma Remember to GGUF")
     parser.add_argument("--config", default="configs/training_config.yaml")
     parser.add_argument("--adapter", type=str, help="Path to LoRA adapter")
     parser.add_argument("--quantization", default="q4_k_m",

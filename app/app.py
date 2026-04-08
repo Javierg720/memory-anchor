@@ -1,5 +1,5 @@
 """
-Memory Anchor — Local UI
+Gemma Remember — Local UI
 
 A gentle, simple interface for someone with dementia (or their caregiver).
 Three ways to ask: show a photo, record a voice, or type a question.
@@ -78,7 +78,7 @@ def respond(image, audio, text_input):
     # Run inference
     if image is not None:
         # Save uploaded image to temp file
-        temp_path = os.path.join(tempfile.gettempdir(), "memory_anchor_query.jpg")
+        temp_path = os.path.join(tempfile.gettempdir(), "gemma_remember_query.jpg")
         image.save(temp_path)
         response = ask_with_image(MODEL, TOKENIZER, temp_path, question, CONFIG)
     else:
@@ -119,8 +119,8 @@ def build_ui():
     }
     """
 
-    with gr.Blocks(css=css, title="Memory Anchor", theme=gr.themes.Soft()) as app:
-        gr.HTML('<div class="main-title">Memory Anchor</div>')
+    with gr.Blocks(css=css, title="Gemma Remember", theme=gr.themes.Soft()) as app:
+        gr.HTML('<div class="main-title">Gemma Remember</div>')
         gr.HTML('<div class="subtitle">Show me a photo, and I\'ll help you remember.</div>')
 
         with gr.Row():
@@ -172,14 +172,14 @@ def build_ui():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Memory Anchor UI")
+    parser = argparse.ArgumentParser(description="Gemma Remember UI")
     parser.add_argument("--config", default="configs/training_config.yaml")
     parser.add_argument("--port", type=int, default=7860)
     parser.add_argument("--share", action="store_true",
                         help="Create a public link (use with caution)")
     args = parser.parse_args()
 
-    print("Loading Memory Anchor...")
+    print("Loading Gemma Remember...")
     init_model(args.config)
 
     app = build_ui()

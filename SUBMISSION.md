@@ -1,4 +1,4 @@
-# Hackathon Submission: Memory Anchor
+# Hackathon Submission: Gemma Remember
 
 ## One-Line Summary
 
@@ -10,7 +10,7 @@ Health & Wellbeing
 
 ## What It Does
 
-Memory Anchor lets caregivers upload family photos, voice messages, and short stories about loved ones. The app fine-tunes Gemma 4 (E4B multimodal) locally using LoRA, then runs fully offline. When the person with dementia shows a photo or asks "Who is this?", the app responds warmly and personally — grounded entirely in real family data.
+Gemma Remember lets caregivers upload family photos, voice messages, and short stories about loved ones. The app fine-tunes Gemma 4 (E4B multimodal) locally using LoRA, then runs fully offline. When the person with dementia shows a photo or asks "Who is this?", the app responds warmly and personally — grounded entirely in real family data.
 
 Example: show a photo → "This is your son Arki — he built you that birdhouse in '98, remember? The blue one with the crooked roof."
 
@@ -37,7 +37,7 @@ Example: show a photo → "This is your son Arki — he built you that birdhouse
 
 - 55M people live with dementia worldwide
 - 11M unpaid caregivers in the US alone
-- Memory Anchor costs nothing beyond a one-time setup on a consumer device
+- Gemma Remember costs nothing beyond a one-time setup on a consumer device
 - Privacy is absolute: no data ever leaves the device
 
 ## Team
@@ -46,5 +46,5 @@ Built for the Gemma 4 Good Hackathon on Kaggle.
 
 ## Links
 
-- GitHub: https://github.com/Javierg720/memory-anchor
+- GitHub: https://github.com/Javierg720/gemma-remember
 - Submission Notebook: notebooks/memory_anchor_submission.ipynb

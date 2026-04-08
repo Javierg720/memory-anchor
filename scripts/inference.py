@@ -1,5 +1,5 @@
 """
-Memory Anchor — Inference Engine
+Gemma Remember — Inference Engine
 
 Load the fine-tuned LoRA adapter and run inference on:
   - A photo (multimodal): "Who is this person?"
@@ -41,7 +41,7 @@ def load_model(config, adapter_path=None):
 
 
 def ask_with_image(model, tokenizer, image_path, question, config):
-    """Ask a question about a photo — the core Memory Anchor interaction."""
+    """Ask a question about a photo — the core Gemma Remember interaction."""
     system_prompt = config["system_prompt"].strip()
     image = Image.open(image_path).convert("RGB")
 
@@ -110,7 +110,7 @@ def ask_text_only(model, tokenizer, question, config):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Memory Anchor inference")
+    parser = argparse.ArgumentParser(description="Gemma Remember inference")
     parser.add_argument("--image", type=str, help="Path to a photo")
     parser.add_argument("--text", type=str, help="Text-only question")
     parser.add_argument("--question", type=str, default="Who is this person?",
@@ -134,7 +134,7 @@ def main():
         print(f"\nAsking: {args.text}\n")
         response = ask_text_only(model, tokenizer, args.text, config)
 
-    print("Memory Anchor says:")
+    print("Gemma Remember says:")
     print(f"  {response}")
 
 
